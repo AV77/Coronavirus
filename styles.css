@@ -62,11 +62,41 @@ body header nav a:nth-last-child(1) {
   margin-left: 10vh;
   padding: 0.6em;
   border-radius: 10em;
-  border: 2px solid red;
+  background-color: red;
+  color: white;
 }
 
 body header nav a:nth-last-child(1) img {
   margin-right: 1.2em;
+}
+
+body header nav a:nth-last-child(1):hover {
+  opacity: 0.5;
+  color: black;
+  font-weight: 900;
+  -webkit-transform: scale(100);
+          transform: scale(100);
+}
+
+body header nav a:nth-last-child(2)::after, body header nav a:nth-last-child(3)::after, body header nav a:nth-last-child(4)::after, body header nav a:nth-last-child(5)::after, body header nav a:nth-last-child(6)::after {
+  content: '';
+  background-color: red;
+  height: 10%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: none;
+}
+
+body header nav a:nth-last-child(2):hover, body header nav a:nth-last-child(3):hover, body header nav a:nth-last-child(4):hover, body header nav a:nth-last-child(5):hover, body header nav a:nth-last-child(6):hover {
+  position: relative;
+}
+
+body header nav a:nth-last-child(2):hover::after, body header nav a:nth-last-child(3):hover::after, body header nav a:nth-last-child(4):hover::after, body header nav a:nth-last-child(5):hover::after, body header nav a:nth-last-child(6):hover::after {
+  display: block;
+  -webkit-transform: translateY(5pt);
+          transform: translateY(5pt);
 }
 
 @-webkit-keyframes anim1 {
