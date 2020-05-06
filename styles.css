@@ -133,10 +133,18 @@ body section.land div div a {
 
 body section.land div:nth-child(2) div {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 body section.land div:nth-child(2) div IMG {
-  height: 100%;
   width: 100%;
 }
 
@@ -216,4 +224,3 @@ body section.finnorm div div {
   height: 100%;
   width: 50%;
 }
-/*# sourceMappingURL=styles.css.map */
