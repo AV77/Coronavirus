@@ -167,10 +167,10 @@ body header nav a:nth-last-child(2)::after, body header nav a:nth-last-child(3):
           transform: scaleX(0);
   -webkit-transform-origin: left;
           transform-origin: left;
-  -webkit-transition: -webkit-transform 250ms ease-in;
-  transition: -webkit-transform 250ms ease-in;
-  transition: transform 250ms ease-in;
-  transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+  -webkit-transition: -webkit-transform 100ms ease-in;
+  transition: -webkit-transform 100ms ease-in;
+  transition: transform 100ms ease-in;
+  transition: transform 100ms ease-in, -webkit-transform 100ms ease-in;
 }
 
 body header nav a:nth-last-child(2):hover::after, body header nav a:nth-last-child(3):hover::after, body header nav a:nth-last-child(4):hover::after, body header nav a:nth-last-child(5):hover::after, body header nav a:nth-last-child(6):hover::after {
